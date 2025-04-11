@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        body{
+background-color: black;
+        }
+    </style>
+</head>
+<body>
+ <button onclick="them()">click </button>
+ <br><br>
+ <button onclick="change()">click </button>
+ <br><br>
+ <button onmouseover="turn()">mouse over</button>
+ <br><br>
+ <button onclick="leturn()">click</button>
+ <br><br>
+ <button onmouseout="sherr()">mouseout</button>
+ <script>
+function them(){
+    alert("sharif clicked the button");
+}
+function change(){
+    document.body.style.backgroundColor = "white";
+}
+function turn(){
+    document.body.style.backgroundColor = "yellowgreen";
+}
+function leturn(){
+    document.body.style.backgroundColor = "black";
+}
+function sherr(){
+    alert(67 + 67);
+}
+ </script>
+</body>
+</html>
