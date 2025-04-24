@@ -48,3 +48,53 @@ let her = "elizabeth";
 let him = "sharif";
 let nullified = her ?? him;  //this one returns the first argument if its not null
 console.log(nullified);
+
+//more operators
+let m = 5;
+// the double equal operator
+console.log(m == 5);// returns true because the condition is true
+
+//the tripple equal operator
+console.log(m === 5);// returns true because the condition is true
+
+//the notequal to operator
+console.log(m != 5);// returns false because the condition is false
+
+//the not equal to with double equal signs
+console.log(m !== 5);// returns false because the conditin is false
+
+//the lessthan or equal to operator
+console.log(m <= 5);// returns true because the condition is true
+
+//the greaterthan or equal to operator
+console.log(m >= 5);// returns true because the condition is true
+
+//the not operator
+console.log(!(m == 5));//returns false because the condition is false
+
+//comparisons in conditional statements
+let driversAge = 26;
+if(driversAge >= 25){
+    text = "he is ready to take the job from january";
+};
+console.log(text);
+
+//the logical operator &&
+
+const nam = "sharif";
+const area = "kampala";//the && operator returns false if one or both conditions are false
+let response = nam.length <= area.length && nam.at(2) == area.at(1);
+console.log(response);// the && operator only returns true when both conditions are true
+
+//the logical operator ||
+
+const boys = ["kawiso", "ssebayigga", "abdul"];//this operator returns true when one or both conditions is true
+const girls = ["carol", "maya", "precious", "stella"];
+let right = boys.indexOf("kawiso") == girls.indexOf("maya") || boys.includes("abdul") == girls.includes("men");
+console.log(right);//returns false only when both conditions are false
+
+//the ternary operator ?
+
+const lives = "sharif lives in kayunga wakiso";//returns the first string if the condition is true
+let yes = (lives.length < 20)? "the text is okay" : "you wrote too much";
+console.log(yes);// the operator returns the second string if the condition is false
