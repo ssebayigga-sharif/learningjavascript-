@@ -38,16 +38,15 @@ do {
 //comparing the forloop and the while loop
 //using the for loop to collect items in an array
 const cars = ["BMW", "volvo", "ford", "kia", "legacy", "subaru"];
-for(let i = 0; cars[i];i++){
-    console.log(cars[i]);
-};
+for (let i = 0; cars[i]; i++) {
+  console.log(cars[i]);
+}
 
 //using the while loop to collect the items in an array
 const heroes = ["batman", "ironman", "superman", "flash", "greenlantern"];
 let o = 0;
 //the while loop
-while(heroes[o]){
-    o++;
-    console.log(heroes[o]);
-
+while (o < heroes.length) {
+  console.log(heroes[o]);
+  o++;
 }

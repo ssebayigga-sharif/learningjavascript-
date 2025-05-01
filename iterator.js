@@ -18,7 +18,11 @@ for (let l of letters) {
 
 //iterating through a map
 
-const map = new Map([["banana", 200], ["apple", 300], ["lemon", 400]]);
+const map = new Map([
+  ["banana", 200],
+  ["apple", 300],
+  ["lemon", 400],
+]);
 for (let m of map) {
   console.log(m);
 }

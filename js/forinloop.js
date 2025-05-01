@@ -46,12 +46,12 @@ console.log(blank);
 
 // looping through a string
 const names = `sharif `;
-for(let n of names){
-    console.log(n);
+for (let n of names) {
+  console.log(n);
 }
 
 //looping through an array
 const bees = ["honey", "pollinator", "destroyer"];
-for(let b of bees){
-    console.log(b);
+for (let b of bees) {
+  console.log(b);
 }
