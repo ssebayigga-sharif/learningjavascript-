@@ -1,0 +1,63 @@
+// class inheritance
+class motor {
+  constructor(name, color) {
+    this.refered = name;
+    this.paint = color;
+  }
+  usedFor() {
+    return "they ease long distances"; // this is the method of the motor class
+  }
+}
+
+// the class to inherit
+class Bicycle extends motor {
+  constructor(name, type, color, look) {
+    super(name, color);
+    this.nature = type;
+    this.how = look;
+  }
+  use() {
+    return "highly helpfull in exercise"; // this is the method of the inheriting class
+  }
+}
+
+//referencing to inherit class
+let myRide = new Bicycle("wrexha", "yellow");
+console.log(myRide.use()); //returns the method of the bicycle class that inherited the motor class
+
+// Getters and Setters
+//using a getter first
+class Boy {
+  constructor(name) {
+    this.defined = name;
+  }
+  get boyName() {
+    return this.defined;
+  }
+  set(me) {
+    this.defined = me;
+  }
+}
+
+//new object for the class
+const myBoy = new Boy("kamoga sudais");
+console.log(myBoy.boyName); // in this example we were using a getter.
+
+// using setters in  class
+class Girl {
+  constructor(name) {
+    this.called = name;
+  }
+  get herName() {
+    return this.called;
+  }
+  set herName(h) {
+    this.called = h;
+  }
+}
+
+//referencing to the new object
+const myGirl = new Girl("Nalukenge Viola");
+//setting
+let her = (myGirl.herName = "Nakamya Florence");
+console.log(her); // this example uses the setter
