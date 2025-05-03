@@ -83,3 +83,34 @@ class Jail extends School {
 
 let result = new Jail("peter", "simon");
 console.log(result.criminals);
+// another example of class i javascript
+class Vehicle {
+  constructor(name, color) {
+    this.identity = name;
+    this.look = color;
+  }
+  owner() {
+    return "sherif bought the car"; //this is the method of the class
+  }
+}
+
+//the new object referencinh to the new object
+const myRyde = new Vehicle("legacy", "black");
+console.log(myRyde.identity);
+
+// the static method
+class Me {
+  constructor(name) {
+    this.called = name;
+  }
+
+  static identity() {
+    return "he is 20 years old and lives in kampala with his mom";
+  }
+}
+// the new object referencing to the class
+console.log(Me.identity()); // this method allows as to use classes without the new object
+
+// with the new object
+const Bboys = new Me("ssebayigga");
+console.log(Me.identity(Bboys)); // this is the way we can use the static method with the new object.

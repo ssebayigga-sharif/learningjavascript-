@@ -61,3 +61,23 @@ const myGirl = new Girl("Nalukenge Viola");
 //setting
 let her = (myGirl.herName = "Nakamya Florence");
 console.log(her); // this example uses the setter
+
+
+// class inheritance
+class Van {
+  constructor(label) {
+    this.name = label;
+  }
+}
+//the class to inherit
+class Mine extends Van {
+  constructor(label, name) {
+    super(label, name);
+    this.call = name;
+  }
+}
+// the new object referencing to the class
+
+const ride = new Mine("ford");
+
+console.log(ride.name); // returns the value of the name parameter as  persed in the new object
