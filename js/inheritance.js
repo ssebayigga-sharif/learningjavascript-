@@ -23,7 +23,7 @@ class Bicycle extends motor {
 
 //referencing to inherit class
 let myRide = new Bicycle("wrexha", "yellow");
-console.log(myRide.use()); //returns the method of the bicycle class that inherited the motor class
+console.log(myRide.usedFor()); //returns the method of the bicycle class that inherited the motor class
 
 // Getters and Setters
 //using a getter first
@@ -61,7 +61,6 @@ const myGirl = new Girl("Nalukenge Viola");
 //setting
 let her = (myGirl.herName = "Nakamya Florence");
 console.log(her); // this example uses the setter
-
 
 // class inheritance
 class Van {
