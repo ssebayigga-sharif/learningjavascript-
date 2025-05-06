@@ -66,3 +66,31 @@ const {
   boysQuater: { color, room }, //this is the destructured object
 } = house;
 console.log(house.boysQuater.room);
+
+//more about destructuring
+
+const defineMe = {
+  firstName: "sharif",
+  lastName: "ssebayigga",
+  age: 22,
+  district: "wakiso",
+  city: "kampala",
+  mom: {
+    firstNam: "zafalan",
+    lastNam: "nansubuga",
+    ag: 42,
+    distric: "wakiso",
+    cit: "kampala",
+  },
+};
+
+//destructuring the object
+const {
+  age,
+  firstName,
+  mom: { firstNam, ag, cit },
+} = defineMe; //accessing the properties of the destructured object
+console.log(defineMe.age);
+console.log(defineMe.firstName);
+console.log(defineMe.mom.ag);
+console.log(defineMe.mom.firstNam);

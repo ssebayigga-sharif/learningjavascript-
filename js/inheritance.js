@@ -80,3 +80,26 @@ class Mine extends Van {
 const ride = new Mine("ford");
 
 console.log(ride.name); // returns the value of the name parameter as  persed in the new object
+
+// more about inheritance
+
+class Ball {
+  constructor(color, size) {
+    this.looking = color;
+    this.covers = size;
+  }
+}
+
+// the  class to inherit the ball class
+
+class newBall extends Ball {
+  constructor(color, nature, size, looks) {
+    super(color, size);
+    this.looks = nature;
+    this.exact = looks;
+  }
+}
+
+// new object referencing to the class
+const myBall = new newBall("circular", "green");
+console.log(myBall.looks);
