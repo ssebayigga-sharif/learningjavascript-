@@ -12,7 +12,7 @@ const actions = ["com", "eat", "sleep", "go"];
 
 let comes = actions.map(call);
 function call(value) {
-  return value + "ing";
+  return value + "ing"; //the map method deals with carrying out a function on each array element
 }
 
 console.log(comes);
