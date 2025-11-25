@@ -1,17 +1,17 @@
 let myName = "sharif ssebayigga";
 console.log(myName.length);
 //escape characters
-let go = "i like \"going\" for hikes ";
+let go = 'i like "going" for hikes ';
 console.log(go);
 //line breaking
-let mi = "she will come \n today";
+export let mi = "she will come \n today";
 console.log(mi);
 //string methods
 //charAt()
 let x = "hello john";
 console.log(x.charAt(7));
 //charcodeat()
-let r = "sharif";
+export let r = "sharif";
 console.log(r.charCodeAt(1));
 //the at() method
 let h = "kawiso";
@@ -31,7 +31,7 @@ let car = "bens, ford, legacy";
 console.log(car.slice(4));
 //using negative values
 let ca = "bens, ford, legacy";
-console.log(ca.slice(-12 ,-8));
+console.log(ca.slice(-12, -8));
 //method two
 
 //substring
@@ -72,11 +72,11 @@ let re = " i love legacy cars";
 console.log(re.replace("legacy", "ford"));
 /*since the replace method is case sensitive to relace capitals with 
 small letters we the /i flag */
-let d = "CAPITAL" ;
+let d = "CAPITAL";
 console.log(d.replace(/CAPITAL/i, "capital"));
 //we can also replace the entire expression using the replaceall method
 let he = " rinah is coming";
-console.log(he.replaceAll( "rinah is coming", "sharifah is coming"));
+console.log(he.replaceAll("rinah is coming", "sharifah is coming"));
 //we can also change a string to an array
 //using the split method
 let op = "hakim sharif | shakur";
